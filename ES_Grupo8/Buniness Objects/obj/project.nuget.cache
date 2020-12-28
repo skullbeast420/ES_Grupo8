@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "XLBBaX8kSKgjACdurS+M/E5rAKFWKgxfcex0soDqDCurnoaj1RtOuz3BrbcRPzp0O/NlAYV+r1IwWxfO5FaHgQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Bernas\\Desktop\\TP_ES\\ES_Grupo8\\Buniness Objects\\Buniness Objects.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
