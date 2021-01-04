@@ -5,4 +5,12 @@
     <RootNamespace>Data_Layer</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Npgsql" Version="5.0.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Buniness Objects\Buniness Objects.csproj" />
+  </ItemGroup>
+
 </Project>

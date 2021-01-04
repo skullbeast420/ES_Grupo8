@@ -1,0 +1,9 @@
+C:\Users\tatia\OneDrive\IPCA\ES\Trabalho\ES_Grupo8\ES_Grupo8\Buniness Objects\obj\Debug\netstandard2.0\Buniness Objects.AssemblyInfoInputs.cache
+C:\Users\tatia\OneDrive\IPCA\ES\Trabalho\ES_Grupo8\ES_Grupo8\Buniness Objects\obj\Debug\netstandard2.0\Buniness Objects.AssemblyInfo.cs
+C:\Users\tatia\OneDrive\IPCA\ES\Trabalho\ES_Grupo8\ES_Grupo8\Buniness Objects\obj\Debug\netstandard2.0\Buniness Objects.csproj.CoreCompileInputs.cache
+C:\Users\tatia\OneDrive\IPCA\ES\Trabalho\ES_Grupo8\ES_Grupo8\Buniness Objects\bin\Debug\netstandard2.0\Buniness Objects.deps.json
+C:\Users\tatia\OneDrive\IPCA\ES\Trabalho\ES_Grupo8\ES_Grupo8\Buniness Objects\bin\Debug\netstandard2.0\Buniness Objects.dll
+C:\Users\tatia\OneDrive\IPCA\ES\Trabalho\ES_Grupo8\ES_Grupo8\Buniness Objects\bin\Debug\netstandard2.0\Buniness Objects.pdb
+C:\Users\tatia\OneDrive\IPCA\ES\Trabalho\ES_Grupo8\ES_Grupo8\Buniness Objects\obj\Debug\netstandard2.0\Buniness Objects.dll
+C:\Users\tatia\OneDrive\IPCA\ES\Trabalho\ES_Grupo8\ES_Grupo8\Buniness Objects\obj\Debug\netstandard2.0\Buniness Objects.pdb
+C:\Users\tatia\OneDrive\IPCA\ES\Trabalho\ES_Grupo8\ES_Grupo8\Buniness Objects\obj\Debug\netstandard2.0\Buniness Objects.csprojAssemblyReference.cache

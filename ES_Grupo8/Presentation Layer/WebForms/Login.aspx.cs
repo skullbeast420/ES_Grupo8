@@ -5,6 +5,10 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Windows.Forms;
+using System.Windows;
+using BO;
+using BR;
+
 
 namespace Presentation_Layer.WebForms
 {
@@ -14,12 +18,45 @@ namespace Presentation_Layer.WebForms
         {
 
         }
+       
+        Rules aux = new Rules();
 
+        /// <summary>
+        /// Botão para iniciar sessão
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         protected void BIniciarSessao_click(object sender, EventArgs e)
         {
-            //this.Hide();
-            HomePage hp = new HomePage();
-            //hp.ShowDialogue();
+           
+            Utilizador ut;
+            string email, password;
+
+            //Caso haja algum espaço em branco
+            if (string.IsNullOrEmpty(TBEmail.Text) || string.IsNullOrEmpty(TBPassword.Text))
+            {
+                MessageBox.Show("Não pode deixar espaços em branco!");
+            }
+            else
+            {
+                email = TBEmail.Text;
+                password = TBPassword.Text;
+
+                ut = aux.Login(Utilizadores.currentUser, email, password);
+
+                //Interpreta o valor retornado da função Login
+                if (ut != null)
+                {
+                    MessageBox.Show("Login efetuado com sucesso");
+
+                    //string url = string.Format("~/HomePage.aspx?fp={0}&sp={1}", "firstparameter", "secondparameter");
+                    //Response.Redirect(url);
+                }
+                else if (ut == null)
+                {
+                    MessageBox.Show("Não existe uma conta com esses dados!");
+                }
+            }
         }
     }
 }

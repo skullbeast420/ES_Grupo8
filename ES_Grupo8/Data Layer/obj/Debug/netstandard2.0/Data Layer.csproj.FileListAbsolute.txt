@@ -1,0 +1,12 @@
+C:\Users\tatia\OneDrive\IPCA\ES\Trabalho\ES_Grupo8\ES_Grupo8\Data Layer\obj\Debug\netstandard2.0\Data Layer.csprojAssemblyReference.cache
+C:\Users\tatia\OneDrive\IPCA\ES\Trabalho\ES_Grupo8\ES_Grupo8\Data Layer\obj\Debug\netstandard2.0\Data Layer.AssemblyInfoInputs.cache
+C:\Users\tatia\OneDrive\IPCA\ES\Trabalho\ES_Grupo8\ES_Grupo8\Data Layer\obj\Debug\netstandard2.0\Data Layer.AssemblyInfo.cs
+C:\Users\tatia\OneDrive\IPCA\ES\Trabalho\ES_Grupo8\ES_Grupo8\Data Layer\obj\Debug\netstandard2.0\Data Layer.csproj.CoreCompileInputs.cache
+C:\Users\tatia\OneDrive\IPCA\ES\Trabalho\ES_Grupo8\ES_Grupo8\Data Layer\bin\Debug\netstandard2.0\Data Layer.deps.json
+C:\Users\tatia\OneDrive\IPCA\ES\Trabalho\ES_Grupo8\ES_Grupo8\Data Layer\bin\Debug\netstandard2.0\Data Layer.dll
+C:\Users\tatia\OneDrive\IPCA\ES\Trabalho\ES_Grupo8\ES_Grupo8\Data Layer\bin\Debug\netstandard2.0\Data Layer.pdb
+C:\Users\tatia\OneDrive\IPCA\ES\Trabalho\ES_Grupo8\ES_Grupo8\Data Layer\bin\Debug\netstandard2.0\Buniness Objects.dll
+C:\Users\tatia\OneDrive\IPCA\ES\Trabalho\ES_Grupo8\ES_Grupo8\Data Layer\bin\Debug\netstandard2.0\Buniness Objects.pdb
+C:\Users\tatia\OneDrive\IPCA\ES\Trabalho\ES_Grupo8\ES_Grupo8\Data Layer\obj\Debug\netstandard2.0\Data Layer.csproj.CopyComplete
+C:\Users\tatia\OneDrive\IPCA\ES\Trabalho\ES_Grupo8\ES_Grupo8\Data Layer\obj\Debug\netstandard2.0\Data Layer.dll
+C:\Users\tatia\OneDrive\IPCA\ES\Trabalho\ES_Grupo8\ES_Grupo8\Data Layer\obj\Debug\netstandard2.0\Data Layer.pdb

@@ -5,4 +5,9 @@
     <RootNamespace>Business_Rules</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Buniness Objects\Buniness Objects.csproj" />
+    <ProjectReference Include="..\Data Layer\Data Layer.csproj" />
+  </ItemGroup>
+
 </Project>
