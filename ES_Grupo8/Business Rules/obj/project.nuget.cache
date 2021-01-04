@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "FMUyi5T2my8cbwF5iIbqfO6r7gcd2yKVPThKkLOoWVVLiwD4arLxK6LcF/LPzn5uGXfmlPhw01BA4m+QQ52l+A==",
+  "dgSpecHash": "s1HBbgp276gsKJnIImGH4DFH9YW+OMeiqRkrdA8f2ZKMc2VnSJ7mdcpMNXYeQMVebYGTInSqzQ09CDjDBcDjcA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Bernas\\Desktop\\TP_ES\\ES_Grupo8\\Business Rules\\Business Rules.csproj",
+  "projectFilePath": "C:\\Users\\tatia\\OneDrive\\IPCA\\ES\\Trabalho\\ES_Grupo8\\ES_Grupo8\\Business Rules\\Business Rules.csproj",
   "expectedPackageFiles": [
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\tatia\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\tatia\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }

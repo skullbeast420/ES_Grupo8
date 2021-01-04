@@ -53,6 +53,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -68,16 +69,96 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Web.config" />
+    <Content Include="WebForms\Agenda.aspx" />
+    <Content Include="WebForms\Especialidades.aspx" />
+    <Content Include="WebForms\GestaoDeConta.aspx" />
+    <Content Include="WebForms\Historico.aspx" />
+    <Content Include="WebForms\HomePage.aspx" />
     <Content Include="WebForms\Login.aspx" />
+    <Content Include="WebForms\CriarConta.aspx" />
+    <Content Include="WebForms\MarcarConsulta.aspx" />
+    <Content Include="WebForms\Medicos.aspx" />
+    <Content Include="WebForms\MinhaSaude.aspx" />
+    <Content Include="WebForms\Unidades.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebForms\Agenda.aspx.cs">
+      <DependentUpon>Agenda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Agenda.aspx.designer.cs">
+      <DependentUpon>Agenda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Especialidades.aspx.cs">
+      <DependentUpon>Especialidades.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Especialidades.aspx.designer.cs">
+      <DependentUpon>Especialidades.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\GestaoDeConta.aspx.cs">
+      <DependentUpon>GestaoDeConta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\GestaoDeConta.aspx.designer.cs">
+      <DependentUpon>GestaoDeConta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Historico.aspx.cs">
+      <DependentUpon>Historico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Historico.aspx.designer.cs">
+      <DependentUpon>Historico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\HomePage.aspx.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\HomePage.aspx.designer.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebForms\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="WebForms\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\CriarConta.aspx.cs">
+      <DependentUpon>CriarConta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\CriarConta.aspx.designer.cs">
+      <DependentUpon>CriarConta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\MarcarConsulta.aspx.cs">
+      <DependentUpon>MarcarConsulta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\MarcarConsulta.aspx.designer.cs">
+      <DependentUpon>MarcarConsulta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Medicos.aspx.cs">
+      <DependentUpon>Medicos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Medicos.aspx.designer.cs">
+      <DependentUpon>Medicos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\MinhaSaude.aspx.cs">
+      <DependentUpon>MinhaSaude.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\MinhaSaude.aspx.designer.cs">
+      <DependentUpon>MinhaSaude.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Unidades.aspx.cs">
+      <DependentUpon>Unidades.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Unidades.aspx.designer.cs">
+      <DependentUpon>Unidades.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
