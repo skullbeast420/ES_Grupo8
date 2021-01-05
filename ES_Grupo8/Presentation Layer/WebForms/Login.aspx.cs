@@ -49,8 +49,9 @@ namespace Presentation_Layer.WebForms
                 {
                     MessageBox.Show("Login efetuado com sucesso");
 
-                    //string url = string.Format("~/HomePage.aspx?fp={0}&sp={1}", "firstparameter", "secondparameter");
-                    //Response.Redirect(url);
+                    //Para abrir a Home Page
+                    string url = string.Format("~/WebForms/HomePage.aspx");
+                    Response.Redirect(url);
                 }
                 else if (ut == null)
                 {

@@ -22,9 +22,9 @@ namespace BO
         string morada;
         string nacionalidade;
         DateTime data_Contrato;
-        Tipo_Profissional id_TipoProfissional;
-        Perfil id_Perfil;
-        Protocolo id_Protocolo;
+        Tipo_Profissional TipoProfissionalUser;
+        Perfil PerfilUser;
+        Protocolo ProtocoloUser;
         Horario HorárioUser;
         #endregion
 
@@ -40,9 +40,9 @@ namespace BO
         public string Morada { get => morada; set => morada = value; }
         public string Nacionalidade { get => nacionalidade; set => nacionalidade = value; }
         public DateTime Data_Contrato { get => data_Contrato; set => data_Contrato = value; }
-        public Tipo_Profissional Id_TipoProfissional { get => id_TipoProfissional; set => id_TipoProfissional = value; }
-        public Perfil Id_Perfil { get => id_Perfil; set => id_Perfil = value; }
-        public Protocolo Id_Protocolo { get => id_Protocolo; set => id_Protocolo = value; }
+        public Tipo_Profissional TipoProfissional { get => TipoProfissionalUser; set => TipoProfissionalUser = value; }
+        public Perfil Perfil { get => PerfilUser; set => PerfilUser = value; }
+        public Protocolo Protocolo { get => ProtocoloUser; set => ProtocoloUser = value; }
         public Horario Horário { get => HorárioUser; set => HorárioUser = value; }
         #endregion
 
@@ -51,13 +51,13 @@ namespace BO
         {
             ID = 0; CC = 0; Senha = Nome = Email = Sexo = Telemovel = Morada = Nacionalidade = "";
             Data_Nascimento = Data_Contrato = DateTime.Now;
-            Id_TipoProfissional = null;
-            Id_Perfil = null;
-            Id_Protocolo = null;
+            TipoProfissional = null;
+            Perfil = null;
+            Protocolo = null;
             Horário = null;
         }
 
-        public Utilizador(int iD, int cC, string senha, string nome, DateTime data_Nascimento, string email, string sexo, string telemovel, string morada, string nacionalidade, DateTime data_Contrato, Tipo_Profissional id_TipoProfissional, Perfil id_Perfil, Protocolo id_Protocolo, Horario HorárioUser)
+        public Utilizador(int iD, int cC, string senha, string nome, DateTime data_Nascimento, string email, string sexo, string telemovel, string morada, string nacionalidade, DateTime data_Contrato, Tipo_Profissional TipoProfissionalUser, Perfil PerfilUser, Protocolo ProtocoloUser, Horario HorárioUser)
         {
             ID = iD;
             CC = cC;
@@ -70,9 +70,9 @@ namespace BO
             Morada = morada;
             Nacionalidade = nacionalidade;
             Data_Contrato = data_Contrato;
-            Id_TipoProfissional = id_TipoProfissional;
-            Id_Perfil = id_Perfil;
-            Id_Protocolo = id_Protocolo;
+            TipoProfissional = TipoProfissionalUser;
+            Perfil = PerfilUser;
+            Protocolo = ProtocoloUser;
             Horário = HorárioUser;
         }
         #endregion 
@@ -381,18 +381,4 @@ namespace BO
 
 
     }
-
-    public class Aux
-    {
-        public string Json { get; set; }
-
-        public Aux() { }
-
-        public Aux(string s)
-        {
-            Json = s;
-        }
-
-    }
-
 }

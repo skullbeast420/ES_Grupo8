@@ -16,6 +16,9 @@ namespace DL
        
         DataTable dt = new DataTable();
         List<Horario> listaHorarios = new List<Horario>();
+        List<Perfil> listaPerfis = new List<Perfil>();
+        List<Protocolo> listaProtocolos = new List<Protocolo>();
+        List<Tipo_Profissional> listaTiposProfissional = new List<Tipo_Profissional>();
 
         public DataBase()
         {
@@ -47,6 +50,9 @@ namespace DL
 
             //Funções 
             GetHorarios();
+            GetPerfis();
+            GetProtocolos();
+            GetTipoProfissional();
 
             dt = ExecuteReturnQuery(query);
 
@@ -58,6 +64,7 @@ namespace DL
                 currentUser.Email = dt.Rows[0]["email"].ToString();
                 currentUser.ID = Convert.ToInt32(dt.Rows[0]["id"]);
 
+                //Para atribuir horário do tipo Horario ao currentUser
                 foreach(Horario horario in listaHorarios)
                 {
                     if(horario.ID == Convert.ToInt32(dt.Rows[0]["id_horário"]))
@@ -66,9 +73,33 @@ namespace DL
                     }
                 }
 
-                //currentUser.Id_Perfil = (Perfil)dt.Rows[0]["id_perfil"];
-                //currentUser.Id_Protocolo = (Protocolo)dt.Rows[0]["id_protocolo"]; ;
-                //currentUser.Id_TipoProfissional = (Tipo_Profissional)dt.Rows[0]["id_tipoprofissional"]; 
+                //Para atribuir perfil do tipo Perfil ao currentUser
+                foreach (Perfil perfil in listaPerfis)
+                {
+                    if (perfil.ID == Convert.ToInt32(dt.Rows[0]["id_perfil"]))
+                    {
+                        currentUser.Perfil = perfil;
+                    }
+                }
+
+                //Para atribuir protocolo do tipo Protocolo ao currentUser
+                foreach (Protocolo protocolo in listaProtocolos)
+                {
+                    if (protocolo.ID == Convert.ToInt32(dt.Rows[0]["id_protocolo"]))
+                    {
+                        currentUser.Protocolo = protocolo;
+                    }
+                }
+
+                //Para atribuir tipoProfissional do tipo Tipo_Profissioanl ao currentUser
+                foreach (Tipo_Profissional tipoProfissional in listaTiposProfissional)
+                {
+                    if (tipoProfissional.ID == Convert.ToInt32(dt.Rows[0]["id_tipoprofissional"]))
+                    {
+                        currentUser.TipoProfissional = tipoProfissional;
+                    }
+                }
+
                 currentUser.Morada = dt.Rows[0]["morada"].ToString();
                 currentUser.Nacionalidade = dt.Rows[0]["nacionalidade"].ToString();
                 currentUser.Nome = dt.Rows[0]["nome"].ToString();
@@ -82,6 +113,9 @@ namespace DL
             return null;
         }
 
+        /// <summary>
+        /// Função que adiciona todos os horarios existentes para uma lista do tipo Horario
+        /// </summary>
         void GetHorarios()
         {
             string query = "select * from Horario";
@@ -97,6 +131,60 @@ namespace DL
                     linha["dias_disponíveis"].ToString()
                 );
                 listaHorarios.Add(horario);
+            }
+        }
+
+        /// <summary>
+        /// Função que adiciona todos os perfis existentes para uma lista do tipo Perfil
+        /// </summary>
+        void GetPerfis()
+        {
+            string query = "select * from Perfil";
+            dt = ExecuteReturnQuery(query);
+
+            foreach (DataRow linha in dt.Rows)
+            {
+                Perfil perfil = new Perfil(
+                    Convert.ToInt32(linha["id"]),
+                    linha["descrição"].ToString()
+                );
+                listaPerfis.Add(perfil);
+            }
+        }
+
+        /// <summary>
+        /// Função que adiciona todos os protocolos existentes para uma lista do tipo Protocolo
+        /// </summary>
+        void GetProtocolos()
+        {
+            string query = "select * from Protocolo";
+            dt = ExecuteReturnQuery(query);
+
+            foreach (DataRow linha in dt.Rows)
+            {
+                Protocolo protocolo = new Protocolo(
+                    Convert.ToInt32(linha["id"]),
+                    linha["descrição"].ToString()
+                );
+                listaProtocolos.Add(protocolo);
+            }
+        }
+
+        /// <summary>
+        /// Função que adiciona todos os tipos de profissionais existentes para uma lista do tipo Tipo_Profissional
+        /// </summary>
+        void GetTipoProfissional()
+        {
+            string query = "select * from tipo_profissional";
+            dt = ExecuteReturnQuery(query);
+
+            foreach (DataRow linha in dt.Rows)
+            {
+                Tipo_Profissional tipoProfissional = new Tipo_Profissional(
+                    Convert.ToInt32(linha["id"]),
+                    linha["categoria"].ToString()
+                );
+                listaTiposProfissional.Add(tipoProfissional);
             }
         }
 
