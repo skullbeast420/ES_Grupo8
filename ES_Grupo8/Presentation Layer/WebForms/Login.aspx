@@ -29,7 +29,7 @@
     <br />
         Password:
     <br />
-    <asp:TextBox ID="TBPassword" runat="server" Width="320px"></asp:TextBox>
+    <asp:TextBox ID="TBSenha" runat="server" Width="320px"></asp:TextBox>
     <br />
     <p>
         <asp:Button ID="BIniciarSessao" runat="server" OnClick="BIniciarSessao_click" Text="Iniciar Sessão" Width="326px" />

@@ -33,13 +33,13 @@ namespace Presentation_Layer.WebForms
         protected global::System.Web.UI.WebControls.TextBox TBEmail;
 
         /// <summary>
-        /// TBPassword control.
+        /// TBSenha control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TBPassword;
+        protected global::System.Web.UI.WebControls.TextBox TBSenha;
 
         /// <summary>
         /// BIniciarSessao control.

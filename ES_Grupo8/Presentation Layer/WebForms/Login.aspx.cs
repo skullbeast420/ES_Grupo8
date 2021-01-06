@@ -29,20 +29,19 @@ namespace Presentation_Layer.WebForms
         protected void BIniciarSessao_click(object sender, EventArgs e)
         {
            
-            Utilizador ut;
-            string email, password;
+            string email, senha;
 
             //Caso haja algum espaço em branco
-            if (string.IsNullOrEmpty(TBEmail.Text) || string.IsNullOrEmpty(TBPassword.Text))
+            if (string.IsNullOrEmpty(TBEmail.Text) || string.IsNullOrEmpty(TBSenha.Text))
             {
                 MessageBox.Show("Não pode deixar espaços em branco!");
             }
             else
             {
                 email = TBEmail.Text;
-                password = TBPassword.Text;
+                senha = TBSenha.Text;
 
-                ut = aux.Login(Utilizadores.currentUser, email, password);
+                Utilizador ut = aux.Login(Utilizadores.currentUser, email, senha);
 
                 //Interpreta o valor retornado da função Login
                 if (ut != null)

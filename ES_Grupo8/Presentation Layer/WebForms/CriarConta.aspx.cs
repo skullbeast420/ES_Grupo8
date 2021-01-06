@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
+using BO;
+using BR;
 
 namespace Presentation_Layer.WebForms
 {
@@ -21,6 +18,13 @@ namespace Presentation_Layer.WebForms
         /// <param name="e"></param>
         protected void BCriarConta_Click(object sender, EventArgs e)
         {
+
+            Utilizador utilizador;
+
+            if(string.IsNullOrEmpty(TBNome.Text)|| string.IsNullOrEmpty(TBEmail.Text) || string.IsNullOrEmpty(TBNif.Text))
+
+
+
             if (DDLSexo.SelectedValue == "")
             {
                 Label1.Text = "Please Select a Gender";
