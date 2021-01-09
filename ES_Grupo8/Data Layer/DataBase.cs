@@ -1,7 +1,9 @@
-﻿using BO;
-using Npgsql;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+using BO;
+using Npgsql;
 using System.Data;
 
 namespace DL
@@ -45,7 +47,6 @@ namespace DL
         {
             //Query a ser executada
             string query = "select * from Utilizador where email='" + email + "' and senha='" + password + "'";
-
 
             //Funções 
             GetHorarios();

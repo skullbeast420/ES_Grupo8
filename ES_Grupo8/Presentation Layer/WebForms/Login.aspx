@@ -5,40 +5,93 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <style>
-    #webform-header {
+    .topnav {
     width: auto;
     padding: 12px 48px 0;
     margin: auto;
     height: 32px;
-    background-color:rgb(0, 148, 255);
+    background-color:cornflowerblue;
     color: white;
     }
-</style>
+    
+    .auto-style1 {
+        width: 1358px;
+    }
+    .auto-style2 {
+        width: 109px;
+    }
+    
+    </style>
 </head>
-<form id="form1" runat="server">
-    <div id="webform-header-wrapper">
-        <div id="webform-header">
-            Iniciar Sessão
-        </div>
-    </div>
-    <br />
-    <br />
-        E-mail:
-    <br />
-    <asp:TextBox ID="TBEmail" runat="server" Width="320px"></asp:TextBox>
-    <br />
-        Password:
-    <br />
-    <asp:TextBox ID="TBSenha" runat="server" Width="320px"></asp:TextBox>
-    <br />
-    <p>
-        <asp:Button ID="BIniciarSessao" runat="server" OnClick="BIniciarSessao_click" Text="Iniciar Sessão" Width="326px" />
-    </p>
-    <p>
-        <asp:Label ID="Label3" runat="server" Text=" Não tem conta? "></asp:Label>
-        <asp:HyperLink ID="LinkCriarConta" runat="server" NavigateUrl="~/WebForms/CriarConta.aspx">Criar Conta</asp:HyperLink>
-    </p>
+<form id="loginForm" runat="server">
+    <section id="main-content">
+       <section id="wrapper">
+           <div class="row">
+               <div class="col-lg-12">
+                   <section class="panel">
+
+                       <div class="topnav">
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a class="active">Login</a>
+  
+                        </div>
+                       <div class="panel-body">
+                            <table class="auto-style1">
+                                <tr>
+                                    <td colspan="2">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-style2">&nbsp;</td>
+                                    <td>E-mail:</td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-style2">&nbsp;</td>
+                                    <td>
+                                        <asp:TextBox ID="TBEmail" runat="server" Width="302px"></asp:TextBox>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-style2">&nbsp;</td>
+                                    <td>Senha:</td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-style2">&nbsp;</td>
+                                    <td>
+                                        <asp:TextBox ID="TBSenha" runat="server" Width="302px"></asp:TextBox>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-style2">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-style2">&nbsp;</td>
+                                    <td>
+                                        <asp:Button ID="BIniciarSessao" runat="server" Onclick="BIniciarSessao_click" Text="Iniciar Sessão" Width="308px" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-style2">&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-style2">&nbsp;</td>
+                                    <td>Ainda não tem conta?
+                                        <asp:HyperLink ID="HyperLink1" NavigateUrl="~/WebForms/CriarConta.aspx" runat="server">Registe-se aqui.</asp:HyperLink>
+                                    </td>
+                                </tr>
+                            </table>
+                       </div>
+
+                   </section>
+              
+           </div>
+       </section>
+   </section>
 </form>
+
 
 
 </html>

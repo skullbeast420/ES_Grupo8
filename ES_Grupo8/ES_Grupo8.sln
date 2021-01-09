@@ -5,11 +5,11 @@ VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentation Layer", "Presentation Layer\Presentation Layer.csproj", "{B4365B9B-F7E1-4692-9CFA-B1ED44983DFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buniness Objects", "Buniness Objects\Buniness Objects.csproj", "{68A809F4-A742-479B-8B46-5DE435FB3B84}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Buniness Objects", "Buniness Objects\Buniness Objects.csproj", "{68A809F4-A742-479B-8B46-5DE435FB3B84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business Rules", "Business Rules\Business Rules.csproj", "{CAA9018D-6FE8-4E1C-A8DC-BA79C911C268}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business Rules", "Business Rules\Business Rules.csproj", "{CAA9018D-6FE8-4E1C-A8DC-BA79C911C268}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data Layer", "Data Layer\Data Layer.csproj", "{334AD721-065B-432A-9A6E-1A373A9D6248}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data Layer", "Data Layer\Data Layer.csproj", "{334AD721-065B-432A-9A6E-1A373A9D6248}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

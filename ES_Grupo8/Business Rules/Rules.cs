@@ -8,10 +8,10 @@ namespace BR
     public class Rules
     {
         DataBase db = new DataBase();
-        public Utilizador Login(Utilizador currentUser, string email, string senha)
+        public Utilizador Login(Utilizador currentUser, string email, string password)
         {
 
-            return db.Login(currentUser, email, senha);
+            return db.Login(currentUser, email, password);
 
         }
 

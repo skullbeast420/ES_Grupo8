@@ -15,13 +15,13 @@ namespace Presentation_Layer.WebForms
     {
 
         /// <summary>
-        /// form1 control.
+        /// loginForm control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.HtmlControls.HtmlForm loginForm;
 
         /// <summary>
         /// TBEmail control.
@@ -51,21 +51,12 @@ namespace Presentation_Layer.WebForms
         protected global::System.Web.UI.WebControls.Button BIniciarSessao;
 
         /// <summary>
-        /// Label3 control.
+        /// HyperLink1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label3;
-
-        /// <summary>
-        /// LinkCriarConta control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink LinkCriarConta;
+        protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
     }
 }

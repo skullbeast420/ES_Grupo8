@@ -34,10 +34,6 @@
                 <asp:MenuItem NavigateUrl="~/WebForms/GestaoDeConta.aspx" Text="Gestão de Conta" Value="Gestão de Conta"></asp:MenuItem>
             </Items>
         </asp:Menu>
-            <br />
-            <br />
-            Nome:<br />
-            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
     </form>
 </body>
 </html>

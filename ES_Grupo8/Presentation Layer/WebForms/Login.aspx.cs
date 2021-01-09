@@ -29,7 +29,8 @@ namespace Presentation_Layer.WebForms
         protected void BIniciarSessao_click(object sender, EventArgs e)
         {
            
-            string email, senha;
+            Utilizador ut;
+            string email, password;
 
             //Caso haja algum espaço em branco
             if (string.IsNullOrEmpty(TBEmail.Text) || string.IsNullOrEmpty(TBSenha.Text))
@@ -39,9 +40,9 @@ namespace Presentation_Layer.WebForms
             else
             {
                 email = TBEmail.Text;
-                senha = TBSenha.Text;
+                password = TBSenha.Text;
 
-                Utilizador ut = aux.Login(Utilizadores.currentUser, email, senha);
+                ut = aux.Login(Utilizadores.currentUser, email, password);
 
                 //Interpreta o valor retornado da função Login
                 if (ut != null)
